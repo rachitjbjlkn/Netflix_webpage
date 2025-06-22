@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="netflix.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <nav class="nav">
+          <span class="net">NETFLIX</span>
+          <span class="navb">
+            <select class="lan">
+                <option value="English">English</option>
+                <option value="Bengali">Bengali</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Japanese">Japanese</option>
+            </select>
+            <button class="btn" id="sign">Sign In</button>
+          </span>
+        </nav>
+        <main>
+          <section class="back">
+            <div class="backimg">
+              <div id="login" style="display: none">
+                <button class="cross">x</button>
+                <h1 class="loh">Login</h1>
+                <form>
+                  <input
+                    type="text"
+                    placeholder="User Name"
+                    name="user"
+                    class="user"
+                    required
+                  /><br /><br />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    class="email"
+                    required
+                  /><br /><br />
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    name="password"
+                    class="password"
+                    required
+                  /><br /><br />
+                  <button class="log" name="submit">Submit</button>
+                </form>
+              </div>
+              <div class="con" style="text-align: center">
+                <p class="up">Unlimited movies, TV <br />shows and more</p>
+                <p class="p">
+                  Starts at $3. Cancel at any time.<br /><br />
+                  Ready to watch? Enter your email to create or restart your
+                  membership.
+                </p>
+                <div class="bacin">
+                  <input
+                    type="email"
+                    id="in"
+                    class="backin"
+                    placeholder="Email address"
+                  />
+                  <button class="start" disabled>Get Started »</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="slid">
+            <div class="carousel">
+              <div class="carousel-item active">
+                <img src="img/netflix/alien.jpg" alt="Featured Movie 1" />
+                <div class="carousel-caption">
+                  <h1>Featured Movie 1</h1>
+                  <p>Watch now on Netflix</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/netflix/deadboy.jpg" alt="Featured Movie 2" />
+                <div class="carousel-caption">
+                  <h1>Featured Movie 2</h1>
+                  <p>Watch now on Netflix</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/netflix/dune.jpg" alt="Featured Movie 3" />
+                <div class="carousel-caption">
+                  <h1>Featured Movie 3</h1>
+                  <p>Watch now on Netflix</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/netflix/evil.jpg" alt="Featured Movie 4" />
+                <div class="carousel-caption">
+                  <h1>Featured Movie 4</h1>
+                  <p>Watch now on Netflix</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/netflix/stranger.jpg" alt="Featured Movie 5" />
+                <div class="carousel-caption">
+                  <h1>Featured Movie 5</h1>
+                  <p>Watch now on Netflix</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/netflix/wednesday.jpg" alt="Featured Movie 6" />
+                <div class="carousel-caption">
+                  <h1>Featured Movie 6</h1>
+                  <p>Watch now on Netflix</p>
+                </div>
+              </div>
+              <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+              <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+          </section>
+          <section class="join">
+            <p class="m">More reasons to join</p>
+            <div class="boxes">
+              <div class="o">
+                Cancel or switch <br />plans anytime<br /><span
+                  aria-label="Handshake"
+                  >🤝</span
+                >
+              </div>
+              <div class="o">
+                A safe place just for <br />kids<br /><span aria-label="Heart"
+                  >❤️</span
+                >
+              </div>
+              <div class="o">
+                Watch on your <br />favourite devices<br /><span aria-label="TV"
+                  >📺</span
+                >
+              </div>
+              <div class="o">
+                Stories tailored to <br />your taste<br /><span
+                  aria-label="Lamp"
+                  >🪔</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="fre">
+            <p class="faq-title">Frequently Asked Questions</p>
+            <div class="f">
+              <p class="word">What is Netflix?</p>
+              <button class="sign" id="szero">+</button>
+            </div>
+            <div id="zero" class="z">
+              Netflix is a streaming service that offers a wide variety of
+              award-winning TV shows, movies, anime, documentaries and more—on
+              thousands of internet-connected devices.<br /><br />
+              You can watch as much as you want, whenever you want, without a
+              single ad—all for one low monthly price.
+            </div>
+            <br />
+            <div class="f">
+              <p class="word">How much does Netflix cost?</p>
+              <button class="sign" id="sone">+</button>
+            </div>
+            <div id="one" class="z">
+              Watch Netflix on your smartphone, tablet, laptop, or streaming
+              device, all for one fixed monthly fee. Plans range from $3 to $10
+              a month. No extra costs, no contracts.
+            </div>
+            <br />
+            <div class="f">
+              <p class="word">Where can I watch?</p>
+              <button class="sign" id="stwo">+</button>
+            </div>
+            <div id="two" class="z">
+              Watch anywhere, anytime. Sign in with your Netflix account to
+              watch instantly on the web at Netflix.com from your personal
+              computer or on any internet-connected device that offers the
+              Netflix app, including smart TVs, smartphones, tablets, streaming
+              media players, and game consoles.<br /><br />
+              You can also download your favourite shows with the iOS or Android
+              app. Use downloads to watch while you are on the go and without an
+              internet connection. Take Netflix with you anywhere.
+            </div>
+            <br />
+            <div class="f">
+              <p class="word">How do I cancel?</p>
+              <button class="sign" id="sthree">+</button>
+            </div>
+            <div id="three" class="z">
+              Netflix is flexible. There are no annoying contracts and no
+              commitments. You can easily cancel your account online in two
+              clicks. There are no cancellation fees—start or stop your account
+              anytime.
+            </div>
+            <br />
+            <div class="f">
+              <p class="word">What can I watch on Netflix?</p>
+              <button class="sign" id="sfour">+</button>
+            </div>
+            <div id="four" class="z">
+              Netflix has an extensive library of feature films, documentaries,
+              TV shows, anime, award-winning Netflix originals, and more. Watch
+              as much as you want, anytime you want.
+            </div>
+            <br />
+            <div class="f">
+              <p class="word">Is Netflix good for kids?</p>
+              <button class="sign" id="sfive">+</button>
+            </div>
+            <div id="five" class="z">
+              The Netflix Kids experience is included in your membership to give
+              parents control while kids enjoy family-friendly TV shows and
+              films in their own space.<br /><br />
+              Kids profiles come with PIN-protected parental controls that let
+              you restrict maturity ratings of content kids can watch and block
+              specific titles you don't want kids to see.
+            </div>
+          </section>
+          <section class="last">
+            <p>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+            <input
+              type="email"
+              id="in2"
+              class="backin"
+              placeholder="Email address"
+            />
+            <button class="start" disabled>Get Started »</button>
+          </section>
+          <br />
+          <div
+            class="contact"
+            style="
+              font-size: 14px;
+              margin-left: 35px;
+              color: rgba(255, 255, 255, 0.645);
+              font-family: Arial, Helvetica, sans-serif;
+            "
+          >
+            Questions? Call
+            <a href="#" style="color: rgba(255, 255, 255, 0.645)"
+              >00-0800-919-1743</a
+            >
+          </div>
+          <footer class="foo">
+            <div class="row">
+              <a href="#">FAQ</a><br /><br />
+              <a href="#">Investor Relations</a><br /><br />
+              <a href="#">Privacy</a><br /><br />
+              <a href="#">Speed Test</a><br /><br />
+            </div>
+            <div class="row">
+              <a href="#">Help Centre</a><br /><br />
+              <a href="#">Jobs</a><br /><br />
+              <a href="#">Cookie Preferences</a><br /><br />
+              <a href="#">Legal Notices</a><br /><br />
+            </div>
+            <div class="row">
+              <a href="#">Account</a><br /><br />
+              <a href="#">Ways to Watch</a><br /><br />
+              <a href="#">Corporate Information</a><br /><br />
+              <a href="#">Only on Netflix</a><br /><br />
+            </div>
+            <div class="row">
+              <a href="#">Media Centre</a><br /><br />
+              <a href="#">Terms of Use</a><br /><br />
+              <a href="#">Contact Us</a><br /><br />
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <script src="netflix.js"></script>
+  </body>
+</html>
